@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  openfisca_jupyter:
+    build: .
+    volumes:
+      - ./country-template:/openfisca
+    ports:
+      - 8888:8888
+      - 2000:2000
